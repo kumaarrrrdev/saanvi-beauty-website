@@ -1,0 +1,315 @@
+/* ============================================
+   SAANVI BEAUTY - COMPONENTS
+   Buttons, Cards, Forms & Special Elements
+   ============================================ */
+
+/* --- Buttons --- */
+.btn-primary {
+    background: var(--primary-green);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid var(--primary-green);
+}
+
+.btn-primary:hover {
+    background: var(--dark-green);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(57, 181, 74, 0.3);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--dark);
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 2px solid var(--dark);
+    transition: all var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-secondary:hover {
+    background: var(--dark);
+    color: white;
+}
+
+.book-btn {
+    background: var(--primary-green);
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.book-btn:hover {
+    background: var(--dark-green);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(57, 181, 74, 0.3);
+}
+
+/* --- Feature Cards --- */
+.feature-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all var(--transition-fast);
+    border-bottom: 3px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-bottom-color: var(--primary-green);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(57, 181, 74, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 28px;
+    color: var(--primary-green);
+    transition: all var(--transition-fast);
+}
+
+.feature-card:hover .feature-icon {
+    background: var(--primary-green);
+    color: white;
+    transform: rotateY(360deg);
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    color: var(--dark);
+    font-size: 1.3rem;
+}
+
+.feature-card p {
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+/* --- Service Category Cards --- */
+.service-category {
+    background: var(--cream);
+    border-radius: 20px;
+    padding: 40px 30px;
+    transition: all var(--transition-fast);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-category::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--primary-green);
+    transform: scaleX(0);
+    transition: transform var(--transition-fast);
+}
+
+.service-category:hover::before {
+    transform: scaleX(1);
+}
+
+.service-category:hover {
+    border-color: var(--primary-green);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.service-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.service-list {
+    margin: 20px 0;
+}
+
+.service-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+    display: flex;
+    justify-content: space-between;
+    color: var(--gray);
+    font-size: 0.95rem;
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+.price {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+/* --- Info Cards --- */
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: all var(--transition-fast);
+}
+
+.info-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.info-icon {
+    background: rgba(57, 181, 74, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.info-content h3 {
+    margin-bottom: 10px;
+    color: var(--dark);
+    font-size: 1.3rem;
+}
+
+.info-content p {
+    color: var(--gray);
+    line-height: 1.6;
+}
+
+/* Special Quiz Card */
+.info-card.quiz-card,
+.info-card[style*="linear-gradient"] {
+    background: linear-gradient(135deg, var(--primary-green), var(--dark-green)) !important;
+    color: white;
+}
+
+.info-card.quiz-card .info-icon,
+.info-card[style*="linear-gradient"] .info-icon {
+    background: rgba(255,255,255,0.2);
+    color: white;
+}
+
+.info-card.quiz-card h3,
+.info-card[style*="linear-gradient"] h3 {
+    color: white;
+}
+
+.info-card.quiz-card p,
+.info-card[style*="linear-gradient"] p {
+    color: rgba(255,255,255,0.9);
+}
+
+
+/* ============================================
+   GOOGLE REVIEWS WIDGET STYLES
+   ============================================ */
+
+.reviews-widget-container {
+    margin: 40px 0;
+    min-height: 400px; /* Prevents layout shift */
+}
+
+/* Custom styling for Elfsight widget override */
+.reviews-widget-container .elfsight-app {
+    max-width: 100%;
+}
+
+/* Loading state */
+.reviews-widget-container:empty::before {
+    content: 'Loading reviews...';
+    display: block;
+    text-align: center;
+    padding: 60px;
+    color: var(--gray);
+    font-style: italic;
+}
+
+/* Add Review CTA below widget */
+.add-review-cta {
+    text-align: center;
+    margin: 5px;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(57, 181, 74, 0.05), rgba(212, 175, 55, 0.05));
+    border-radius: 20px;
+    border: 2px dashed var(--primary-green);
+}
+
+.add-review-cta p {
+    color: var(--dark);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.add-review-cta .btn-secondary {
+    background: white;
+    border-color: var(--primary-green);
+    color: var(--primary-green);
+}
+
+.add-review-cta .btn-secondary:hover {
+    background: var(--primary-green);
+    color: white;
+}
+
+/* Fallback testimonials (if widget fails) */
+.testimonial-fallback {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Hide Elfsight branding (CSS trick - may violate ToS, use carefully) */
+.reviews-widget-container a[href*="elfsight"] {
+    display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .reviews-widget-container {
+        margin: 20px 0;
+    }
+    
+    .add-review-cta {
+        margin-top: 30px;
+        padding: 20px;
+    }
+}

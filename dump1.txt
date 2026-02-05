@@ -1,0 +1,185 @@
+
+/* 
+/* --- Testimonial Cards --- */
+.testimonial-card {
+    background: var(--cream);
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    transition: all var(--transition-fast);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.quote-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: var(--primary-green);
+    opacity: 0.3;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.client-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-green);
+}
+
+.client-info h4 {
+    color: var(--dark);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.client-rating {
+    color: #FFD700;
+    font-size: 0.9rem;
+}
+
+.testimonial-text {
+    color: var(--gray);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* --- Social Links --- */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all var(--transition-fast);
+}
+
+.social-links a:hover {
+    background: var(--primary-green);
+    transform: translateY(-3px);
+}
+
+/* --- Utility Components --- */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background: var(--primary-green);
+    margin: 20px auto;
+} */
+
+
+    <!-- Testimonials
+    <section class="testimonials" id="reviews">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Client Love</h2>
+                <p>What our customers say about their experience</p>
+            </div>
+            
+            <div class="rating-overview reveal">
+                <div class="big-rating">4.9</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>Based on 150+ reviews from Google, WhatsApp, Instagram, Justdial</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-header">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client" class="client-img">
+                        <div class="client-info">
+                            <h4>Anjali Sharma</h4>
+                            <div class="client-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Best bridal makeup I could have asked for! The team was so patient and understanding. Felt like home with divine positive vibes. Highly recommend for every bride!"</p>
+                </div>
+                
+                <div class="testimonial-card reveal">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-header">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Client" class="client-img">
+                        <div class="client-info">
+                            <h4>Priya R.</h4>
+                            <div class="client-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Very hygienic and professional. The facial treatment was amazing and my skin is glowing! Love the all-women environment - so comfortable and safe."</p>
+                </div>
+                
+                <div class="testimonial-card reveal">
+                    <i class="fas fa-quote-right quote-icon"></i>
+                    <div class="testimonial-header">
+                        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Client" class="client-img">
+                        <div class="client-info">
+                            <h4>Meera K.</h4>
+                            <div class="client-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">"Been coming here for 2 years now. The personal attention and care is unmatched. They remember your preferences and treat you like family. God bless Saanvi Beauty!"</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
