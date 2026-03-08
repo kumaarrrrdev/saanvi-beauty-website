@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saanvi Beauty Salon in Mysuru – Professional hair care, skin care, bridal makeup & grooming services for women. Book via WhatsApp." />
+  <meta name="keywords" content="Saanvi Beauty, Beauty Salon Mysuru, Bridal Makeup Mysuru, Women Salon Mysuru" />
+  <title>Saanvi Beauty | Divine Beauty &amp; Care</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Elfsight Reviews -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+<!-- Link CSS -->
+<link rel="stylesheet" href="src/css/components.css">
+
+<!-- Link JavaScript -->
+<script src="js/main.js"></script>
+
+</head>
+<body>
+
+<div class="divine-banner" role="marquee" aria-label="Welcome message">
+  <span class="ticker-inner">
+    <i class="fas fa-om"></i>&nbsp; शुभं भवतु &nbsp;|&nbsp; May Divine Grace Shine Upon You &nbsp;|&nbsp; सत्यम शिवम् सुन्दरम् &nbsp;<i class="fas fa-pray"></i>&nbsp;&nbsp; Welcome to Saanvi Beauty, Mysuru &nbsp;<i class="fas fa-om"></i>&nbsp;&nbsp;
+  </span>
+</div>
+
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <!-- Overlay -->
+  <div class="mobile-overlay" id="mOverlay" onclick="MobileNav.close()"></div>
+
+  <!-- Sidebar -->
+  <div class="mobile-nav" id="mSidebar" aria-hidden="true">
+    <div class="mnav-header">
+      <span class="logo-text"><span class="saanvi">Saanvi</span><span class="beauty"> Beauty</span></span>
+      <button class="mnav-close" onclick="MobileNav.close()" aria-label="Close menu"><i class="fas fa-times"></i></button>
+    </div>
+    <ul class="mnav-links">
+      <li><a href="#home"     onclick="MobileNav.close()"><span class="mi"><i class="fas fa-home"></i></span> Home</a></li>
+      <li><a href="#about"    onclick="MobileNav.close()"><span class="mi"><i class="fas fa-info-circle"></i></span> About</a></li>
+      <li><a href="#services" onclick="MobileNav.close()"><span class="mi"><i class="fas fa-spa"></i></span> Services</a></li>
+      <li><a href="#gallery"  onclick="MobileNav.close()"><span class="mi"><i class="fas fa-images"></i></span> Our Work</a></li>
+      <li><a href="#visit"    onclick="MobileNav.close()"><span class="mi"><i class="fas fa-map-marker-alt"></i></span> Visit Us</a></li>
+      <li><a href="#reviews"  onclick="MobileNav.close()"><span class="mi"><i class="fas fa-star"></i></span> Reviews</a></li>
+    </ul>
+    <a href="https://wa.me/917348928480?text=Hi%20Saanvi%20Beauty!%20I%20want%20to%20book%20an%20appointment." class="mnav-wa" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i> Book on WhatsApp
+    </a>
+  </div>
+
+  <div class="nav-container">
+    <div class="web-logo">
+      <a href="#home" aria-label="Saanvi Beauty Home">
+        <span class="saanvi">Saanvi</span><span class="beauty"> Beauty</span>
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Our Work</a></li>
+      <li><a href="#visit">Visit Us</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+    </ul>
+    <a href="https://wa.me/917348928480?text=Hi%20Saanvi%20Beauty!%20I%20want%20to%20book%20an%20appointment." class="book-btn" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i> Book Now
+    </a>
+    <button class="mobile-menu-btn" id="mMenuBtn" onclick="MobileNav.toggle()" aria-label="Open menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-container">
+    <div class="hero-text">
+      <div class="blessing-text">
+        <i class="fas fa-om"></i> "सर्वे भवन्तु सुखिनः" – May All Be Happy
+      </div>
+      <h1>Where Beauty Meets <span>Divine Grace</span></h1>
+      <p class="hero-subtitle">Your glow. Our passion. Experience the elegance of natural beauty and modern style in a space blessed with positive energy and traditional warmth.</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/917348928480?text=Hi%20Saanvi%20Beauty!%20I%20want%20to%20book%20an%20appointment." class="btn-primary" target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> Book Appointment
+        </a>
+        <a href="#services" class="btn-secondary">Explore Services</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="imgs/saloon_n1.png" alt="Saanvi Beauty Salon Mysuru" loading="eager" />
+      <div class="floating-card card-1">
+        <i class="fas fa-star" style="color:gold;"></i>
+        <strong>4.9 Rating</strong>
+        <span>500+ Happy Clients</span>
+      </div>
+      <div class="floating-card card-2">
+        <i class="fas fa-female" style="color:var(--green);"></i>
+        <strong>Women Only</strong>
+        <span>Safe &amp; Comfortable</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-img reveal">
+        <img src="imgs/pic7.png" alt="Saanvi Beauty Salon Interior" loading="lazy" />
+        <div class="exp-badge">
+          <h3>10+</h3>
+          <p>Years of<br>Excellence</p>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h3>About Saanvi Beauty</h3>
+        <p>At Saanvi Beauty, we believe every person deserves to look and feel their best. Our salon offers a complete range of beauty and hair services — from styling, skincare, and bridal makeup to personal grooming — all in a calm and comfortable space.</p>
+        <p>With a passion for enhancing natural beauty, we focus on quality, care, and a touch of elegance in every service. We honor the divine feminine energy in every woman who walks through our doors.</p>
+        <div class="divine-quote">
+          <i class="fas fa-quote-left"></i> "यत्र नार्यस्तु पूज्यन्ते रमन्ते तत्र देवताः"
+          <small>Where women are honored, there the gods dwell happily</small>
+        </div>
+        <a href="#visit" class="btn-primary">Visit Our Space</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features container" aria-label="Why choose Saanvi Beauty">
+  <div class="feature-card reveal">
+    <div class="feat-icon"><i class="fas fa-star"></i></div>
+    <h3>Professional Care</h3>
+    <p>Every service is handled with experience and passion, using trusted, professional-grade products.</p>
+  </div>
+  <div class="feature-card reveal">
+    <div class="feat-icon"><i class="fas fa-spa"></i></div>
+    <h3>Hygiene &amp; Comfort</h3>
+    <p>Our space is kept clean, calm, and comfortable — so you relax and enjoy a refreshing experience.</p>
+  </div>
+  <div class="feature-card reveal">
+    <div class="feat-icon"><i class="fas fa-heart"></i></div>
+    <h3>Personal Attention</h3>
+    <p>Each client is attended to with care and patience, making sure every detail is perfect.</p>
+  </div>
+  <div class="feature-card reveal">
+    <div class="feat-icon"><i class="fas fa-leaf"></i></div>
+    <h3>Trusted Products</h3>
+    <p>Only genuine, well-known brands are used to maintain top quality in every single service.</p>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Our Services</h2>
+      <p>Comprehensive beauty solutions crafted just for you</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-cut"></i></div><h3>Hair Cutting</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-magic"></i></div><h3>Hair Styling</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-palette"></i></div><h3>Hair Coloring</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-spray-can"></i></div><h3>Hair Straightening</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-shower"></i></div><h3>Hair Spa</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-sun"></i></div><h3>Keratin Treatment</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-smile"></i></div><h3>Facial &amp; Cleanup</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-gem"></i></div><h3>Diamond Facial</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-ring"></i></div><h3>Bridal Makeup</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-music"></i></div><h3>Party Makeup</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-hand-sparkles"></i></div><h3>Manicure &amp; Pedicure</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-eye"></i></div><h3>Eyebrow Threading</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-fire"></i></div><h3>Waxing</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-tint"></i></div><h3>De-Tan &amp; Bleach</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-user-tie"></i></div><h3>Saree Draping</h3></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-hands"></i></div><h3>Head Massage</h3></div>
+    </div>
+    <div class="svc-wa-cta reveal">
+      <p>Want to know pricing or book a specific service?</p>
+      <a href="https://wa.me/917348928480?text=Hi%20Saanvi%20Beauty!%20Please%20share%20the%20complete%20service%20list%20and%20pricing." class="btn-primary" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+      <small>We respond with pricing &amp; availability — usually within minutes!</small>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Our Work</h2>
+      <p>A glimpse of transformations and happy moments</p>
+    </div>
+    <!-- Desktop 3-col grid -->
+    <div class="gal-grid" id="galGrid"></div>
+    <!-- Mobile swipe scroll -->
+    <div class="gal-scroll" id="galScroll"></div>
+    <p class="gal-swipe-hint"><i class="fas fa-hand-point-left"></i> Swipe to explore more</p>
+    <div class="gal-load-more" id="galMore">
+      <button onclick="Gal.loadMore()">Load More Photos</button>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" onclick="Gal.close()" aria-label="Close">&times;</button>
+  <div class="lb-nav">
+    <button onclick="Gal.prev()" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <button onclick="Gal.next()" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  <img src="" alt="" id="lb-img" />
+  <div class="lb-counter" id="lbCount"></div>
+</div>
+
+<section class="visit-us" id="visit">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Visit Our Space</h2>
+      <p>Experience tranquility and elegance in our beautifully designed salon</p>
+    </div>
+    <div class="visit-grid">
+      <div class="info-cards reveal">
+        <div class="info-card">
+          <div class="info-ico"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="info-body">
+            <h3>Location</h3>
+            <p>#29, KIADB – Hebbal Industrial Estate, Hebbal, Mysuru – 570016, Karnataka</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Saanvi+Beauty+Hebbal+Industrial+Estate+Mysuru" target="_blank" rel="noopener" class="map-link">
+              <i class="fas fa-directions"></i> Get Directions
+            </a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-ico"><i class="fas fa-clock"></i></div>
+          <div class="info-body">
+            <h3>Working Hours</h3>
+            <p>Mon – Sat: 9:30 AM – 7:30 PM<br>Sunday: 10:00 AM – 5:00 PM<br><strong style="color:var(--green);">Tuesday: Closed</strong></p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-ico"><i class="fab fa-whatsapp"></i></div>
+          <div class="info-body">
+            <h3>Book via WhatsApp</h3>
+            <p>Tap below to chat with us. Share your preferred time &amp; service and we'll confirm instantly.</p>
+            <a href="https://wa.me/917348928480?text=Hi%20Saanvi%20Beauty!%20I%20want%20to%20book%20an%20appointment." class="book-btn" style="margin-top:10px;" target="_blank" rel="noopener">
+              <i class="fab fa-whatsapp"></i> Book Now
+            </a>
+          </div>
+        </div>
+        <div class="info-card quiz-card">
+          <div class="info-ico"><i class="fas fa-brain"></i></div>
+          <div class="info-body">
+            <h3>Self Awareness Quiz</h3>
+            <p>Discover your inner self! A life-changing quiz designed for students and elders alike.</p>
+            <span class="soon-badge"><i class="fas fa-hourglass-half"></i> Coming Soon</span>
+          </div>
+        </div>
+      </div>
+      <div class="map-wrap reveal">
+        <img src="imgs/saloon_in1.png" alt="Saanvi Beauty Salon Interior" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="reviews">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2>Client Love</h2>
+      <p>Real reviews from Google, updated live</p>
+    </div>
+    <div class="reviews-widget reveal">
+      <div class="elfsight-app-11886b3b-e112-46f9-a7a2-a13b04532ec4" data-elfsight-app-lazy></div>
+    </div>
+    <div class="review-cta reveal">
+      <p>Loved your experience at Saanvi Beauty?</p>
+      <a href="https://share.google/SCIoHObhsBi01AA1B" target="_blank" rel="noopener" class="btn-secondary">
+        <i class="fas fa-star"></i> Write a Review on Google
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="f-brand">
+      <span class="logo-text"><span class="saanvi">Saanvi</span><span class="beauty"> Beauty</span></span>
+      <p>Enhancing natural beauty and confidence since 2017. Personalised care, top-tier styling, and a relaxing environment exclusively for women.</p>
+      <div class="social-row">
+        <a href="https://www.facebook.com/share/193tzoKPEW/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/makeoverby_saanvi_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/917348928480" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="f-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Our Work</a></li>
+        <li><a href="#visit"><i class="fas fa-chevron-right"></i> Visit Us</a></li>
+        <li><a href="#reviews"><i class="fas fa-chevron-right"></i> Reviews</a></li>
+      </ul>
+    </div>
+    <div class="f-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Hair Care</a></li>
+        <li><a href="#services">Skin Care &amp; Facials</a></li>
+        <li><a href="#services">Bridal Makeup</a></li>
+        <li><a href="#services">Waxing &amp; Grooming</a></li>
+        <li><a href="#services">Party Makeup</a></li>
+        <li><a href="#services">Manicure &amp; Pedicure</a></li>
+      </ul>
+    </div>
+    <div class="f-col f-contact">
+      <h4>Contact Us</h4>
+      <p><i class="fas fa-map-marker-alt"></i> #29, KIADB – Hebbal Industrial Estate, Mysuru, Karnataka 570016</p>
+      <p><i class="fas fa-clock"></i> Mon–Sat: 9:30 AM – 7:30 PM | Sun: 10 AM – 5 PM</p>
+      <p><i class="fab fa-whatsapp"></i> Book via WhatsApp (button below)</p>
+      <a href="https://wa.me/917348928480?text=Hi%20Saanvi%20Beauty!%20I%20want%20to%20book%20an%20appointment." class="book-btn" style="margin-top:14px;" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i> Book on WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Saanvi Beauty. All Rights Reserved. Crafted with <i class="fas fa-heart" style="color:var(--pink);"></i> for the divine feminine.</p>
+    <div class="divine-bar">
+      <i class="fas fa-om"></i> शुभं भवतु (Shubham Bhavatu) – May auspiciousness be yours <i class="fas fa-pray"></i>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/917348928480?text=Hi%20Saanvi%20Beauty!%20I%20want%20to%20book%20a%20service." class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Back to Top -->
+<button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+</body>
+</html>
